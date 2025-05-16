@@ -13,8 +13,8 @@
 }
 
 .split-text {
-    font-size: 1.5rem; /* Equivalent to text-2xl */
-    font-weight: 600;   /* Equivalent to font-semibold */
+    font-size: 5rem;
+    font-weight: 600;   
     text-align: center;
     color: white;
 }
