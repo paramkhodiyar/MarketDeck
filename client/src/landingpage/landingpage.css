@@ -1,20 +1,82 @@
 .content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     padding: 20px;
     z-index: 1100;
+    justify-content: center;
 }
 
 .content {
-    max-width: 600px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.shiny-text {
+    position: relative;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: auto;
+    
+}
+.shiny-text span{
+     animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .split-text {
     font-size: 5rem;
-    font-weight: 600;   
+    font-weight: 600;
     text-align: center;
     color: white;
+}
+
+.buttonholder {
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.headercontainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.dashboardnav {
+    background: none;
+    border: none;
+    padding: 20px;
+    background-color: #007382;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+}
+
+.getstartednav {
+     background: none;
+    border: none;
+    padding: 20px;
+    background-color: #007382;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
 }
